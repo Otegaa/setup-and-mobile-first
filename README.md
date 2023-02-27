@@ -128,6 +128,6 @@ I would like to thank Microverse community for this opportunity to learn new thi
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Otegaa/setup-and-mobile-first/blob/portfolio-mobile-first-development/LICENSE.md) licensed.
+This project is [MIT](https://github.com/Otegaa/setup-and-mobile-first/blob/main/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
