@@ -57,6 +57,12 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+🚀 Live Demo
+
+- https://otegaa.github.io/
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 > Describe how a new developer could make use of your project.
@@ -83,12 +89,6 @@ Clone this repository to your desired folder:
 Install this project with:
 
 - Clone the code into your machine and run test in an editor of your choice(E.g VScode).
-
-### Deployment
-
-You can access the deployed project using:
-
-- https://otegaa.github.io/
 
 ## 👥 Authors <a name="authors"></a>
 
