@@ -84,6 +84,12 @@ Install this project with:
 
 - Clone the code into your machine and run test in an editor of your choice(E.g VScode).
 
+### Deployment
+
+You can access the deployed project using:
+
+- https://otegaa.github.io/
+
 ## 👥 Authors <a name="authors"></a>
 
 > Mention all of the collaborators of this project.
