@@ -10,6 +10,10 @@ body {
   background-color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 label[for="name"],
 label[for="email"],
 label[for="message"] {
