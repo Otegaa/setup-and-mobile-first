@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300;400;600;700&family=Poppins&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Portfolio website</title>
+    <title>Blessing's Portfolio Website</title>
   </head>
   <body>
     <div class="container">
@@ -21,16 +21,16 @@
             <a href="#about-info">Ekiugbo Blessing</a>
             <img
               src="./assets/icons/Icon - Menu.svg"
-              alt="icon-menu"
+              alt="hamburger-icon-menu"
               class="info-image"
             />
 
             <ul class="desktop-navbar">
-              <li><a href="#">Portfolio</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#about-info">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#contact">Contact</a></li>
               <li>
-                <a href="#"
+                <a href="#message"
                   ><img
                     src="/assets/nav-icons/Icon - Mail.svg"
                     alt="email-icon"
@@ -95,9 +95,9 @@
           </div>
         </section>
 
-        <section class="works">
+        <section class="works" id="portfolio">
           <div class="heading-works">
-            <h1>My recent works</h1>
+            <h2>My recent works</h2>
             <img
               src="./assets/images/Vector.png"
               alt="work-underline"
@@ -111,7 +111,7 @@
                 <img
                   src="./assets/images/Img Placeholder.png"
                   alt="multi-post stories"
-                  class="img-placeholder"
+                  class="work1-img-placeholder"
                 />
                 <div class="main-detail gym-app__detail">
                   <h3>Multi-Post Stories</h3>
@@ -329,7 +329,7 @@
                   <div class="stack-heading stack-skills_styled">
                     <img
                       src="./assets/icons/Rectangle 56.svg"
-                      alt="language-icon"
+                      alt="framework-icon"
                     />
                     <h3>Frameworks</h3>
                   </div>
@@ -347,7 +347,7 @@
                   <div class="stack-heading stack-skills_styled">
                     <img
                       src="./assets/icons/Rectangle 57.svg"
-                      alt="language-icon"
+                      alt="skills-icon"
                     />
                     <h3>skills</h3>
                   </div>
@@ -366,7 +366,7 @@
           </div>
         </section>
 
-        <section class="contact-info">
+        <section class="contact-info" id="contact">
           <div class="contact-info-display">
             <h3>
               I'm always interested in hearing about new projects, so if you'd
@@ -377,6 +377,7 @@
               method="POST"
               class="contact-form"
             >
+              <label for="name">Name</label>
               <input
                 type="text"
                 name="name"
@@ -384,18 +385,20 @@
                 class="contact form-info"
                 required
                 maxlength="30"
+                id="name"
               />
+              <label for="email">Email</label>
               <input
                 type="email"
-                name=""
-                id=""
                 placeholder="Email address"
                 class="contact form-info"
+                id="email"
                 required
               />
+              <label for="message">Message</label>
               <textarea
                 name="text"
-                id="text"
+                id="message"
                 cols="10"
                 rows="5"
                 placeholder="Enter text here"
@@ -418,7 +421,7 @@
                   ><img
                     src="./assets/nav-icons/Footer-icon1.svg"
                     alt="github"
-                    class="footer-icon"
+                    class="footer-github-icon"
                 /></a>
               </li>
               <li>
@@ -426,7 +429,7 @@
                   ><img
                     src="./assets/nav-icons/Footer-icon2.svg"
                     alt="linkedIn"
-                    class="footer-icon"
+                    class="footer-linkedIn-icon"
                 /></a>
               </li>
               <li>
@@ -434,7 +437,7 @@
                   ><img
                     src="./assets/nav-icons/Footer-icon3.svg"
                     alt="instagram"
-                    class="footer-icon"
+                    class="footer-instagram-icon"
                 /></a>
               </li>
               <li>
@@ -442,7 +445,7 @@
                   ><img
                     src="./assets/nav-icons/Footer-icon4.svg"
                     alt="twitter"
-                    class="footer-icon"
+                    class="footer-twitter-icon"
                 /></a>
               </li>
             </ul>
