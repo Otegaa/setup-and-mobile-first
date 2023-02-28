@@ -10,14 +10,8 @@ body {
   background-color: #fff;
 }
 
-label[for="name"] {
-  visibility: hidden;
-}
-
-label[for="email"] {
-  visibility: hidden;
-}
-
+label[for="name"],
+label[for="email"],
 label[for="message"] {
   visibility: hidden;
 }
@@ -242,7 +236,7 @@ label[for="message"] {
 
   .see-project a:link,
   .see-project:visited {
-    background-color: #e05304;
+    background-color: #963903;
     color: #fff;
   }
 
