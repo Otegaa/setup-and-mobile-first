@@ -377,6 +377,7 @@
               method="POST"
               class="contact-form"
             >
+              <label for="name">Name</label>
               <input
                 type="text"
                 name="name"
@@ -384,15 +385,19 @@
                 class="contact form-info"
                 required
                 maxlength="30"
+                id="name"
               />
+              <label for="email">Email</label>
               <input
                 type="email"
                 name=""
                 id=""
                 placeholder="Email address"
                 class="contact form-info"
+                id="email"
                 required
               />
+              <label for="email">Message</label>
               <textarea
                 name="text"
                 id="text"
@@ -401,6 +406,7 @@
                 placeholder="Enter text here"
                 class="contact text"
                 maxlength="500"
+                id="message"
                 required
               ></textarea>
               <div class="submit">
