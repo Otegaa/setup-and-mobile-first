@@ -10,6 +10,18 @@ body {
   background-color: #fff;
 }
 
+label[for="name"] {
+  visibility: hidden;
+}
+
+label[for="email"] {
+  visibility: hidden;
+}
+
+label[for="message"] {
+  visibility: hidden;
+}
+
 @media screen and (min-width: 375px) {
   .main-header {
     height: 3rem;
