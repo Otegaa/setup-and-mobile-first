@@ -265,7 +265,8 @@ label[for="message"] {
   .work-5,
   .work-6,
   .work-7 {
-    background-image: linear-gradient(#26262600 0.75%, #26262666 61.94%),
+    background-image:
+      linear-gradient(#26262600 0.75%, #26262666 61.94%),
       url(/assets/images/backgroundImage.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -610,7 +611,8 @@ label[for="message"] {
 
   .work-2,
   .work-5 {
-    background-image: linear-gradient(#26262600 0.75%, #26262666 61.94%),
+    background-image:
+      linear-gradient(#26262600 0.75%, #26262666 61.94%),
       url(/assets/images/backgroundImage.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -620,7 +622,8 @@ label[for="message"] {
 
   .work-3,
   .work-6 {
-    background-image: linear-gradient(#26262600 0.75%, #26262666 61.94%),
+    background-image:
+      linear-gradient(#26262600 0.75%, #26262666 61.94%),
       url(/assets/images/backgroundImage2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -630,7 +633,8 @@ label[for="message"] {
 
   .work-4,
   .work-7 {
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         to bottom,
         #26262600 0.75%,
         #26262666 61.94%
