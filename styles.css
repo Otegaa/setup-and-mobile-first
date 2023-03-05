@@ -240,7 +240,7 @@ label[for="message"] {
 
   .see-project a:link,
   .see-project a:visited {
-    background-color: #963903;
+    background-color: #b30000;
     color: #fff;
   }
 
@@ -656,6 +656,10 @@ label[for="message"] {
 
   .work-common-class:hover .hide-button {
     opacity: 1;
+  }
+
+  .all-works__detail:hover .work-common-class:not(:hover) {
+    transform: scale(0.9);
   }
 
   .skills {
