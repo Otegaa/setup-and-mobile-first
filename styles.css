@@ -522,6 +522,10 @@ label[for="message"] {
     font-style: normal;
   }
 
+  .desktop-navbar li a:hover {
+    color: #e05304;
+  }
+
   .about {
     flex-direction: row;
     align-items: center;
