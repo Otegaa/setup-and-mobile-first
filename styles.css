@@ -47,6 +47,44 @@ label[for="message"] {
   .info img {
     padding-right: 1rem;
     animation: moveInRight 2s ease-in;
+    cursor: pointer;
+  }
+
+  .show-hamburger {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: #3c3a39;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .cross-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+  }
+
+  .show-links-hamburger {
+    list-style: none;
+  }
+
+  .show-links-hamburger li {
+    border-bottom: 2px solid #6f6c6b;
+    padding: 2rem;
+    margin: 1.5rem;
+  }
+
+  .menu-links {
+    display: block;
+    color: #fff5e1;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
   }
 
   .desktop-navbar {
@@ -506,6 +544,10 @@ label[for="message"] {
   }
 
   .info-image {
+    display: none;
+  }
+
+  .show-hamburger {
     display: none;
   }
 
