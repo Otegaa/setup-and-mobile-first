@@ -3,4 +3,4 @@ const testing = function () {
   return x;
 };
 
-testing();
+console.log(testing);
