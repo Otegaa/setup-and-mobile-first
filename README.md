@@ -24,7 +24,7 @@
 
 # 📖 [Mobile-responsive Project] <a name="about-project"></a>
 
-> This is my second Microverse Project. It is based on how to build my portfolio and make it responsive to various devices
+- This is my second Microverse Project. It is based on how to build my portfolio and make it responsive to various devices
 
 **[Mobile-responsive Project]** is a website that is used to test for responsiveness to mobile devices
 
@@ -32,7 +32,7 @@
 
 ### Tech Stack <a name="Front end"></a>
 
-> This is a desk-top browser website.
+- This is a desk-top browser website.
 
 <details>
   <summary>Client</summary>
@@ -45,8 +45,6 @@
 </details>
 
 ### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
 
 - **[It has a header for navigation]**
 - **[There is a headline section to know more about me and click on the links to connect with me directly]**
@@ -64,8 +62,6 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -92,13 +88,23 @@ Install this project with:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Author1**
 
 - GitHub: [@githubhandle](https://github.com/Otegaa)
 - Twitter: [@twitterhandle](https://twitter.com/O_tegaaa)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/blessing-ekiugbo/)
+
+👤 **Author2**
+
+- Github: [@githubhandle](https://github.com/ikennarichard)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- Add a modal window when the see project button is clicked
+- Integrate more dynamic styles with css frameworks
+- Develop a database to store information from people who sends information via email
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,15 +118,11 @@ Feel free to check the [issues page](https://github.com/Otegaa/setup-and-mobile-
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project or would love to tell me ways to improve it, contact me on LinkedIn or Twitter. It will be a pleasure to hear from you and maybe collaborate on more projects.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank Microverse community for this opportunity to learn new things.
 
