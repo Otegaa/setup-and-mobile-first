@@ -73,8 +73,8 @@ label[for="message"] {
 
   .show-links-hamburger li {
     border-bottom: 2px solid #6f6c6b;
-    padding: 2rem;
-    margin: 1.5rem;
+    padding: 0.6rem;
+    margin: 0.2rem 2rem 0.4rem;
   }
 
   .menu-links {
