@@ -643,6 +643,7 @@ label[for="message"] {
 
   .work-common-class {
     position: relative;
+    transition: all 0.5s linear;
   }
 
   .large-button {
@@ -694,10 +695,12 @@ label[for="message"] {
 
   .work-common-class:hover {
     background-image: url(/assets/images/imgReplacer.png);
+    cursor: pointer;
   }
 
   .work-common-class:hover .main-detail {
     opacity: 0;
+    
   }
 
   .work-common-class:hover .hide-button {
