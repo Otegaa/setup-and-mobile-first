@@ -32,7 +32,7 @@ body {
 
 .heading-modal h3 {
   font-family: var(--font-family-1);
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 700;
   color: var(--space-cadet);
   margin-bottom: 3rem;
@@ -78,7 +78,7 @@ body {
   text-decoration: none;
   color: var(--white);
   background-color: var(--blaze-orange);
-  padding: 0.7rem;
+  padding: 0.7rem 0.2rem;
   border-radius: 3px;
   display: flex;
   gap: 5px;
@@ -87,6 +87,7 @@ body {
 
 .modal-button:hover {
   background-color: var(--citrine-brown);
+  transform: scale(1.03);
 }
 
 .modal-button span {
@@ -95,15 +96,10 @@ body {
   font-size: 1.1rem;
 }
 
-.modal-button-icon {
-  width: 1.5rem;
-  margin-left: 0.3rem;
-}
-
 .close-modal-section {
   position: absolute;
-  top: 2rem;
-  right: 4rem;
+  top: 1.7rem;
+  right: 2rem;
   cursor: pointer;
 }
 
@@ -128,6 +124,10 @@ body {
     margin: 5rem;
   }
 
+  .heading-modal h3 {
+    font-size: 32px;
+  }
+
   .modal-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -139,6 +139,10 @@ body {
     right: 4rem;
   }
 
+  .modal-button-icon {
+    width: 1.5rem;
+    margin-left: 0.3rem;
+  }
   .modal-details-textBtn {
     display: flex;
     flex-direction: column;
