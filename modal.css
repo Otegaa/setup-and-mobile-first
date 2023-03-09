@@ -7,6 +7,8 @@
   --spanish-gray: #979493;
   --cool-grey: #8993a4;
   --citrine-brown: #943e00;
+  --rose-600: #e11d48;
+  --lime-500: #84cc16;
   --font-family-1: roboto;
   --font-family-2: inter;
   --transition: all 0.5s ease-in;
@@ -177,11 +179,11 @@ body {
 
 /* Form validation */
 .error {
-  color: red;
+  color: var(--rose-600);
   font-size: 21px;
 }
 
 .success {
-  color: green;
+  color: var(--lime-500);
   font-size: 21px;
 }

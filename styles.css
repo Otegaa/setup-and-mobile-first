@@ -560,6 +560,10 @@ label[for="message"] {
     font-style: normal;
   }
 
+  .desktop-navbar li a {
+    transition: all 0.3s ease-in;
+  }
+
   .desktop-navbar li a:hover {
     color: #e05304;
   }
