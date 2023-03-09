@@ -156,7 +156,8 @@ const arrProject = [
 
 const cardsHtml = function () {
   for (let index = 0; index < arrProject.length; index += 1) {
-    firstWork.innerHTML = ` <div class="work-1__detail">
+    firstWork.innerHTML = ` 
+           <div class="work-1__detail">
                 <img
                   src="./assets/icons/Img Placeholder.svg"
                   alt="multi-post stories"
