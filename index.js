@@ -7,6 +7,9 @@ const modalSection = document.querySelector('.modal-section');
 const firstWork = document.querySelector('.work-1');
 const sections = document.querySelector('#section');
 const divClass = document.querySelector('.div-class');
+const email = document.querySelector('.email-info');
+const form = document.querySelector('.contact-form');
+const error = document.querySelector('.error');
 
 function openButton() {
   showHamburger.classList.remove('hidden');
@@ -24,6 +27,7 @@ menuLinks.forEach((link) => link.addEventListener('click', () => {
   showHamburger.classList.add('hidden');
 }));
 
+// Modal window pop-up
 const arrProject = [
   {
     name: 'Professional Art Printing Data',
@@ -248,6 +252,37 @@ function getModal() {
 const closeModal = function () {
   modalSection.style.display = 'none';
 };
+
+// Form validation
+
+function errStatus(e) {
+  e.preventDefault();
+
+  error.style.visibility = 'visible';
+
+  const inputEmail = email.value;
+
+  const regex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+  if (!regex.test(inputEmail)) {
+    error.textContent = 'Email address must be lower case';
+    error.className = 'error';
+  }
+
+  if (regex.test(inputEmail)) {
+    error.textContent = 'Success';
+    error.className = 'success';
+    form.submit();
+  }
+}
+
+function removeErrMsg() {
+  error.style.visibility = 'hidden';
+}
+
+email.addEventListener('focus', removeErrMsg);
+
+form.addEventListener('submit', errStatus);
 
 sections.addEventListener('click', getModal);
 divClass.addEventListener('click', closeModal);

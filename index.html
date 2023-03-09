@@ -218,7 +218,7 @@
               I'm always interested in hearing about new projects, so if you'd
               like to chat please get in touch.
             </h3>
-            <form
+            <form 
               action="https://formspree.io/f/mqkoqlor"
               method="POST"
               class="contact-form"
@@ -228,16 +228,17 @@
                 type="text"
                 name="name"
                 placeholder="Full name"
-                class="contact form-info"
+                class="contact form-info name-info"
                 required
                 maxlength="30"
                 id="name"
               />
+              
               <label for="email">Email</label>
               <input
                 type="email"
                 placeholder="Email address"
-                class="contact form-info"
+                class="contact form-info email-info"
                 id="email"
                 required
               />
@@ -248,13 +249,14 @@
                 cols="10"
                 rows="5"
                 placeholder="Enter text here"
-                class="contact text"
+                class="contact text text-info"
                 maxlength="500"
                 required
               ></textarea>
               <div class="submit">
                 <input type="submit" value="Get In Touch" class="btn-submit" />
               </div>
+              <div class="error"></div>
             </form>
           </div>
         </section>

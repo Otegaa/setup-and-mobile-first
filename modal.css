@@ -174,3 +174,14 @@ body {
     width: 100%;
   }
 }
+
+/* Form validation */
+.error {
+  color: red;
+  font-size: 21px;
+}
+
+.success {
+  color: green;
+  font-size: 21px;
+}
