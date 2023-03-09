@@ -87,6 +87,7 @@ body {
 
 .modal-button:hover {
   background-color: var(--citrine-brown);
+  scale: (1.1);
 }
 
 .modal-button span {
