@@ -5,6 +5,8 @@ const closeBtn = document.querySelector('.close-cross');
 const allWorks = document.querySelector('.all-works__detail');
 const modalSection = document.querySelector('.modal-section');
 const firstWork = document.querySelector('.work-1');
+const sections = document.querySelector('#section');
+const divClass = document.querySelector('.div-class');
 
 function openButton() {
   showHamburger.classList.remove('hidden');
@@ -26,7 +28,7 @@ const arrProject = [
   {
     name: 'Professional Art Printing Data',
     nameCard: 'Multi Post Stories',
-    number: 2,
+    number: 1,
     Description:
       "A daily selection of privately personalized reads; no account or sign-ups required,has been the industry's standard",
     descriptionCard:
@@ -209,7 +211,6 @@ const cardsHtml = function () {
 
 window.addEventListener('load', cardsHtml);
 
-// eslint-disable-next-line
 function getModal() {
   modalSection.style.display = 'block';
 
@@ -243,7 +244,9 @@ function getModal() {
   }
 }
 
-// eslint-disable-next-line
 const closeModal = function () {
   modalSection.style.display = 'none';
 };
+
+sections.addEventListener('click', getModal);
+divClass.addEventListener('click', closeModal);
