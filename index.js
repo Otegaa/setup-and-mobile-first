@@ -27,7 +27,6 @@ menuLinks.forEach((link) => link.addEventListener('click', () => {
   showHamburger.classList.add('hidden');
 }));
 
-// Modal window pop-up
 const arrProject = [
   {
     name: 'Professional Art Printing Data',
@@ -252,8 +251,6 @@ function getModal() {
 const closeModal = function () {
   modalSection.style.display = 'none';
 };
-
-// Form validation
 
 function errStatus(e) {
   e.preventDefault();
