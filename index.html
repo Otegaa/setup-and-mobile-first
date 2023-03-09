@@ -218,7 +218,7 @@
               I'm always interested in hearing about new projects, so if you'd
               like to chat please get in touch.
             </h3>
-            <form
+            <form 
               action="https://formspree.io/f/mqkoqlor"
               method="POST"
               class="contact-form"
@@ -228,16 +228,17 @@
                 type="text"
                 name="name"
                 placeholder="Full name"
-                class="contact form-info"
+                class="contact form-info name-info"
                 required
                 maxlength="30"
                 id="name"
               />
+              
               <label for="email">Email</label>
               <input
                 type="email"
                 placeholder="Email address"
-                class="contact form-info"
+                class="contact form-info email-info"
                 id="email"
                 required
               />
@@ -248,13 +249,14 @@
                 cols="10"
                 rows="5"
                 placeholder="Enter text here"
-                class="contact text"
+                class="contact text text-info"
                 maxlength="500"
                 required
               ></textarea>
               <div class="submit">
                 <input type="submit" value="Get In Touch" class="btn-submit" />
               </div>
+              <div class="error"></div>
             </form>
           </div>
         </section>
@@ -267,7 +269,7 @@
                   ><img
                     src="./assets/nav-icons/Footer-icon1.svg"
                     alt="github"
-                    class="footer-github-icon"
+                    class="footer-github-icon footer-icon"
                 /></a>
               </li>
               <li>
@@ -275,7 +277,7 @@
                   ><img
                     src="./assets/nav-icons/Footer-icon2.svg"
                     alt="linkedIn"
-                    class="footer-linkedIn-icon"
+                    class="footer-linkedIn-icon footer-icon"
                 /></a>
               </li>
               <li>
@@ -283,7 +285,7 @@
                   ><img
                     src="./assets/nav-icons/Footer-icon3.svg"
                     alt="instagram"
-                    class="footer-instagram-icon"
+                    class="footer-instagram-icon footer-icon"
                 /></a>
               </li>
               <li>
@@ -291,7 +293,7 @@
                   ><img
                     src="./assets/nav-icons/Footer-icon4.svg"
                     alt="twitter"
-                    class="footer-twitter-icon"
+                    class="footer-twitter-icon footer-icon"
                 /></a>
               </li>
             </ul>
