@@ -57,6 +57,7 @@
 - **[The portfolio is mobile and desktop responsive]**
 - **[There is a pop-up window for when you click on the see project button]**
 - **[There is form validation for all input fields]**
+- **[Data are stored in local storage]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
