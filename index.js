@@ -7,10 +7,10 @@ const modalSection = document.querySelector('.modal-section');
 const firstWork = document.querySelector('.work-1');
 const sections = document.querySelector('#section');
 const divClass = document.querySelector('.div-class');
-const email = document.querySelector('.email-info');
 const form = document.querySelector('.contact-form');
 const error = document.querySelector('.error');
 
+// Opening and the hamburger menu
 function openButton() {
   showHamburger.classList.remove('hidden');
 }
@@ -27,6 +27,7 @@ menuLinks.forEach((link) => link.addEventListener('click', () => {
   showHamburger.classList.add('hidden');
 }));
 
+// Pop-up window array of object
 const arrProject = [
   {
     name: 'Professional Art Printing Data',
@@ -157,7 +158,9 @@ const arrProject = [
   },
 ];
 
+// Function for iterating through the cards.
 const cardsHtml = function () {
+  // Iteration for the first card
   for (let index = 0; index < arrProject.length; index += 1) {
     firstWork.innerHTML = ` 
            <div class="work-1__detail">
@@ -187,6 +190,7 @@ const cardsHtml = function () {
               </div>`;
   }
 
+  // Iteration for the 6 cards
   for (let index = 1; index < arrProject.length; index += 1) {
     allWorks.innerHTML += `
               <div class="work-${arrProject[index].number} work-common-class">
@@ -215,6 +219,7 @@ const cardsHtml = function () {
 
 window.addEventListener('load', cardsHtml);
 
+// Function for pop-up modal
 function getModal() {
   modalSection.style.display = 'block';
 
@@ -252,24 +257,46 @@ const closeModal = function () {
   modalSection.style.display = 'none';
 };
 
+// Form validation
+const formFields = Array.from(form.elements);
+
 function errStatus(e) {
   e.preventDefault();
 
   error.style.visibility = 'visible';
 
-  const inputEmail = email.value;
+  const nameInput = document.querySelector('.name-info');
+  const emailInput = document.querySelector('.email-info');
+  const textInput = document.querySelector('.text-info');
 
   const regex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
 
-  if (!regex.test(inputEmail)) {
-    error.textContent = 'Email address must be lower case';
+  if (
+    nameInput.value === ''
+    && emailInput.value === ''
+    && textInput.value === ''
+  ) {
+    error.textContent = 'Please fill in all required fields';
     error.className = 'error';
-  }
-
-  if (regex.test(inputEmail)) {
+  } else if (nameInput.value === '') {
+    error.textContent = 'Enter a valid name';
+    error.className = 'error';
+  } else if (emailInput.value === '') {
+    error.textContent = 'Enter a valid email';
+    error.className = 'error';
+  } else if (!regex.test(emailInput.value)) {
+    error.textContent = 'Email address must be in lower case';
+    error.className = 'error';
+  } else if (textInput.value === '') {
+    error.textContent = 'Please enter text';
+    error.className = 'error';
+  } else {
     error.textContent = 'Success';
     error.className = 'success';
     form.submit();
+    nameInput.value = '';
+    emailInput.value = '';
+    textInput.value = '';
   }
 }
 
@@ -277,7 +304,7 @@ function removeErrMsg() {
   error.style.visibility = 'hidden';
 }
 
-email.addEventListener('focus', removeErrMsg);
+formFields.forEach((input) => input.addEventListener('focus', removeErrMsg));
 
 form.addEventListener('submit', errStatus);
 

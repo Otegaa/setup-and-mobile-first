@@ -22,13 +22,13 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Mobile-responsive Project] <a name="about-project"></a>
+# 📖 [Blessing's portfolio website] <a name="about-project"></a>
 
 - This is my second Microverse Project. It is based on how to build my portfolio and make it responsive to various devices
 
-**[Mobile-responsive Project]** is a website that is used to test for responsiveness to mobile devices
+**[Blessing's portfolio website]** is a website that is used to test for responsiveness to mobile devices
 
-## 🛠 Built With <a name="HTML and CSS"></a>
+## 🛠 Built With <a name="HTML and CSS and JS"></a>
 
 ### Tech Stack <a name="Front end"></a>
 
@@ -42,6 +42,9 @@
   <ul>
     <li><a href="https://www.w3schools.com/css/">CSS</a></li>
   </ul>
+  <ul>
+    <li><a href="https://www.w3schools.com/js/">JS</a></li>
+  </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
@@ -52,6 +55,8 @@
 - **[There is a skills section to showcase the skills I have in terms of programming]**
 - **[There is a form section to write me directly about any questions]**
 - **[The portfolio is mobile and desktop responsive]**
+- **[There is a pop-up window for when you click on the see project button]**
+- **[There is form validation for all input fields]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,12 +102,12 @@ Install this project with:
 👤 **Author2**
 
 - Github: [@githubhandle](https://github.com/ikennarichard)
+- Github: [@githubhandle](https://github.com/MussieTeka)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Add a modal window when the see project button is clicked
 - Integrate more dynamic styles with css frameworks
 - Develop a database to store information from people who sends information via email
 
