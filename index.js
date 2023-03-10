@@ -7,6 +7,9 @@ const modalSection = document.querySelector('.modal-section');
 const firstWork = document.querySelector('.work-1');
 const sections = document.querySelector('#section');
 const divClass = document.querySelector('.div-class');
+const nameInput = document.querySelector('.name-info');
+const emailInput = document.querySelector('.email-info');
+const textInput = document.querySelector('.text-info');
 const form = document.querySelector('.contact-form');
 const error = document.querySelector('.error');
 
@@ -265,10 +268,6 @@ function errStatus(e) {
 
   error.style.visibility = 'visible';
 
-  const nameInput = document.querySelector('.name-info');
-  const emailInput = document.querySelector('.email-info');
-  const textInput = document.querySelector('.text-info');
-
   const regex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
 
   if (
@@ -307,6 +306,29 @@ function removeErrMsg() {
 formFields.forEach((input) => input.addEventListener('focus', removeErrMsg));
 
 form.addEventListener('submit', errStatus);
+
+// Local storage
+const ObjStorage = { name: '', email: '', text: '' };
+
+const storeInputs = function () {
+  ObjStorage.name = nameInput.value;
+  ObjStorage.email = emailInput.value;
+  ObjStorage.text = textInput.value;
+  localStorage.setItem('data', JSON.stringify(ObjStorage));
+};
+
+formFields.forEach((input) => {
+  input.addEventListener('input', storeInputs);
+});
+
+const retrieveInput = function () {
+  const data = JSON.parse(localStorage.getItem('data'));
+  nameInput.value = data.name;
+  emailInput.value = data.email;
+  textInput.value = data.text;
+};
+
+retrieveInput();
 
 sections.addEventListener('click', getModal);
 divClass.addEventListener('click', closeModal);

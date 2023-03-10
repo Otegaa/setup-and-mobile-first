@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,8 +13,10 @@
       rel="stylesheet"
     />
     <title>Blessing's Portfolio Website</title>
+    <script defer src="./index.js"></script>
   </head>
   <body>
+    <!-- pop-up window for hamburger click on mobile -->
     <div class="container">
       <div class="show-hamburger hidden">
         <div class="cross-container">
@@ -32,7 +34,9 @@
       </div>
 
       <header class="main-header">
+        <!-- nav section -->
         <nav>
+          <!-- nav for mobile -->
           <div class="info">
             <a href="#about-info" class="info-text">Ekiugbo Blessing</a>
             <img
@@ -40,10 +44,10 @@
               alt="hamburger-icon-menu"
               class="info-image"
             />
-
+            <!-- nav for desktop -->
             <ul class="desktop-navbar">
               <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#about-me"">About</a></li>
+              <li><a href="#about-me">About</a></li>
               <li><a href="#contact">Contact</a></li>
               <li>
                 <a href="#message"
@@ -59,6 +63,7 @@
       </header>
 
       <main>
+        <!-- About section -->
         <section class="headline">
           <div class="about" id="about-info">
             <div class="main-about">
@@ -111,7 +116,7 @@
             </div>
           </div>
         </section>
-
+        <!-- works section, most code are in JS -->
         <section class="works" id="portfolio">
           <div class="heading-works">
             <h2>My recent works</h2>
@@ -123,14 +128,12 @@
           </div>
 
           <div class="work-details">
-            <div class="work-1">
-            </div>
+            <div class="work-1"></div>
 
-            <div class="all-works__detail">
-            </div>
+            <div class="all-works__detail"></div>
           </div>
         </section>
-
+        <!-- Skills section -->
         <section class="skills" id="about-me">
           <div class="all-skills">
             <div class="about-skills-details">
@@ -143,11 +146,7 @@
                   need coded, don't hesitate to contact me.
                 </p>
                 <div class="details-btn">
-                  <a
-                    href="#"
-                    download
-                    >Get my Resume</a
-                  >
+                  <a href="#" download>Get my Resume</a>
                 </div>
               </div>
             </div>
@@ -211,14 +210,14 @@
             </div>
           </div>
         </section>
-
+        <!-- Contact-section -->
         <section class="contact-info" id="contact">
           <div class="contact-info-display">
             <h3>
               I'm always interested in hearing about new projects, so if you'd
               like to chat please get in touch.
             </h3>
-            <form 
+            <form
               action="https://formspree.io/f/mqkoqlor"
               method="POST"
               class="contact-form"
@@ -232,7 +231,7 @@
                 maxlength="30"
                 id="name"
               />
-              
+
               <label for="email">Email</label>
               <input
                 type="email"
@@ -257,7 +256,7 @@
             </form>
           </div>
         </section>
-
+        <!-- footer -->
         <section class="footer">
           <div class="footer-socials">
             <ul>
@@ -295,11 +294,9 @@
               </li>
             </ul>
           </div>
-      <section class='modal-section'>
-      </section>
+          <section class="modal-section"></section>
+        </section>
       </main>
-      
     </div>
-    <script src="./index.js"></script>
   </body>
 </html>
